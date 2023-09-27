@@ -5,6 +5,7 @@ import helmet from 'helmet';
 import mongoose from 'mongoose';
 import morgan from 'morgan';
 
+import error from './middleware/error';
 import notFound from './middleware/not-found';
 
 mongoose.set('strictQuery', true);
@@ -18,6 +19,7 @@ app.use(helmet());
 app.use(morgan(config.get('morgan.format')));
 
 app.use(notFound);
+app.use(error);
 
 const port = config.get('port');
 
