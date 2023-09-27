@@ -5,6 +5,7 @@ import helmet from 'helmet';
 import mongoose from 'mongoose';
 import morgan from 'morgan';
 
+import auth from './routes/auth';
 import error from './middleware/error';
 import notFound from './middleware/not-found';
 
@@ -17,6 +18,8 @@ app.use(cors());
 app.use(express.json());
 app.use(helmet());
 app.use(morgan(config.get('morgan.format')));
+
+app.use('/auth', auth);
 
 app.use(notFound);
 app.use(error);
