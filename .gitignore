@@ -1,0 +1,14 @@
+# node_modules
+node_modules
+
+# build
+build/
+
+# visual studio code
+.vscode/
+
+# environment variables
+.env
+
+# mac os
+.DS_Store
