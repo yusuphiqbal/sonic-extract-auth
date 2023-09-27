@@ -1,0 +1,26 @@
+{
+  "name": "sonic-extract-auth",
+  "version": "1.0.0",
+  "description": "Authentication service for Sonic Extract",
+  "main": "build/index.js",
+  "scripts": {
+    "node": "node build/index.js",
+    "dev": "nodemon build/index/js",
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yusuphiqbal/sonic-extract-auth.git"
+  },
+  "author": {
+    "name": "Yusuph Iqbal",
+    "email": "yusuphiqbal21@gmail.com",
+    "url": "https://github.com/yusuphiqbal"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yusuphiqbal/sonic-extract-auth/issues"
+  },
+  "homepage": "https://github.com/yusuphiqbal/sonic-extract-auth#readme"
+}
