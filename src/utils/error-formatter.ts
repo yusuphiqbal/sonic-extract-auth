@@ -1,8 +1,8 @@
 import { ErrorFormatter } from 'express-validator';
 
-const errorFormaterr: ErrorFormatter = (error) => {
+const errorFormater: ErrorFormatter = (error) => {
   if (error.type !== 'field') return { msg: error.msg };
   return { path: error.path, msg: error.msg };
 };
 
-export default errorFormaterr;
+export default errorFormater;
